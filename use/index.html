@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../js/jquery-3.5.1.js"></script>
+    <ul id="ul_a"></ul><!--图片列表-->
+
+    <script src="../js/doT.min.js"></script>
+    <!--模板-->
+    <script id="show" type="text/x-dot-template">
+        {{~it:value:index}}
+            <li>
+                <img src="{{=value.img}}">
+                <p>{{=value.title}}</p>
+                <span>{{=value.a}}</span>
+                <span>{{=value.b}}</span>
+                <span>{{=value.c}}</span>
+                <span>{{=value.d}}</span>
+
+            </li>
+        {{~}}
+    </script>
+
+    <!--数据源-->
+    <script>
+        $.ajax({
+            "url":"../json/demo.json",
+            "type":"get",
+            success:function(data){
+                console.log(data);
+                var inter=doT.template($("#show").text());
+                $("#ul_a").html(inter(data.list))
+
+            }
+        })
+
+    </script>
+    
+</body>
+</html>
