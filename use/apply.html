@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/division.css" rel="stylesheet">
+    <link href="../css/defoult.css" rel="stylesheet">
+    <link href="../css/top-bottom.css" rel="stylesheet">
+    <link href="../css/genneal.css" rel="stylesheet" >
+</head>
+<body>
+    <script src="../js/jquery-3.5.1.js"></script>
+    <header>
+        <div class="header-main">
+            <a href="main.html" class="header-logo"></a>
+            <ul class="header-nav">
+                <li class="header-one"><a href="../index.html">首页</a></li>
+                <li><a href="../play/play.html">酷玩</a></li>
+                <li><a href="../guid/guid_new.html">导购</a></li>
+                <li><a href="../help.html">试用</a></li>
+                <li><a href="">报告</a></li>
+            </ul>
+            <div class="header-image"></div>
+            <div class="header-reg">注册</div>
+        </div>
+    </header>
+    
+    <p class="p">免费试用</p>
+    <ul class="ul_a">
+        <li><a href="../help.html">大众使用</a></li>
+        <li><a href="division.html">体验师专享受</a></li>
+        
+
+    </ul>
+    <div class="div_hr"></div>
+    <ul class="ul_b">
+        <li ><a href="./all.html">全部</a></li>
+        <li class="li_a"><a href="apply.html">申请中</a></li>
+        <li><a href="./inUser.html">使用中</a></li>
+        <li><a href="./over.html">已结束</a></li>
+    </ul>
+    <div class="Foundplay"><!--导购清单--最热-->
+        <div class="Foundplay_div">
+        <ul id="Foundplay_ul">      
+        </ul>
+        <div class="more"> <!--点击加载更多开始-->
+            <p><img src="../img/img/more.png"> </p>加载更多
+        </div>
+        <div class="more_a"> 
+             <p><img src="../img/img/loading-icon.gif"> </p>加载更多
+        </div>
+        <div class="more_box">
+            <ul id="ul_d"></ul>
+        </div><!--点击加载更多结束-->
+        
+    </div>
+    
+    </div>
+<!-- 底部 -->
+<footer class="bottom_main">
+    <div class="erweima"></div>
+    <div class="bott_ bott_one">
+        <ul>
+            <div class="bottom_logo"></div>
+            <li><p>全球酷玩试用导购平台酷·新奇·好玩·品质</p></li>
+            <li><p>微信添加“JguoJguo”获取我们的服务。</p></li>
+        </ul>
+    </div>
+    <div class="bott_ bott_two">
+        <ul>
+            <h5 class="bott_h5">免费试用</h5>
+            <li>试用流程</li>
+            <li>如何提高成功率</li>
+        </ul>
+    </div>
+    <div class="bott_ bott_three">
+        <ul>
+            <h5 class="bott_h5">友情链接</h5>
+            <li>智东西</li>
+            <li>WEIBUSI</li>
+            <li>搜狐IT</li>
+            <li>腾讯科技</li>
+            <li>搜狐数码</li>
+            <li>凤凰科技</li>
+            <li>凤凰数码</li>
+            <li>PConline</li>
+            <li>泡泡网</li>
+            <li>3W咖啡</li>
+            <li>ZUK社区</li>
+            <li>亿觅emie</li>
+            <li>极客公园</li>
+            <li>易迅易启玩</li>
+            <li>果库</li>
+        </ul>
+    </div>
+    <div class="bott_ bott_four">
+        <ul>
+            <h5 class="bott_h5">购买攻略</h5>
+            <li>美亚海淘教程</li>
+            <li>日亚海淘教程</li>
+            <li>海淘转运攻略</li>
+            <li>kickstarter 众筹购买攻略</li>
+            <li>indiegogo 众筹购买攻略</li>
+        </ul>
+    </div>
+    <div class="bott_ bott_five">
+        <ul>
+            <h5 class="bott_h5">厂商合作</h5>
+            <li><a href="#">关于极果</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">商务合作：BD@jiguo.com</a></li>
+            <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
+        </ul>
+    </div>
+    <p class="copy">&copy;2016&nbsp;极果版权所有</p>
+</footer>
+
+    <script src="../js/doT.min.js"></script>
+    <!--模板--><script id="show" type="text/x-dot-template">
+        {{~it:value:index}}     
+            <li>
+                <img src="{{=value.img}}">
+                <p>{{=value.text}}</p>
+                <span>{{="Apply"}}</span>
+                <div class=dot_box>
+                    <img src="../images/img1/xin.png">6
+                    <img src="../images/img1/reply.png">7
+                </div> 
+
+            </li>
+        {{~}}
+    </script>
+
+       <!--模板--><script id="more" type="text/x-dot-template">
+        {{~it:value:index}}     
+            <li>
+                <img src="{{=value.img}}">
+                <p>{{=value.text}}</p>
+                <span>{{=value.price}}</span>
+                <div class=dot_box>
+                    <img src="../images/img1/xin.png">1
+                    <img src="../images/img1/reply.png">2
+                </div> 
+
+            </li>
+        {{~}}
+    </script>
+
+    <script>
+
+            
+                     
+            $.ajax({//导购清单--最新
+            url:"http://192.168.1.47:3000/play/new",
+            type:"get",
+            dataType:"json",
+            success:function(data){
+                console.log(data);          
+                var inter=doT.template($("#show").text());
+                $("#Foundplay_ul").html(inter(data[1]));
+
+            }
+        })
+
+        $.ajax({//加载更多
+            "url": "http://192.168.1.47:3000/play/new",
+            "type": "get",
+            success: function (data) {
+                console.log(data);
+                var inter = doT.template($("#more").text());
+                $("#ul_d").html(inter(data[1]))
+
+            }
+        })
+
+    </script>
+     <script src="../js/more.js"></script>
+</body>
+</html>

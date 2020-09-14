@@ -1,0 +1,252 @@
+.index_report {
+  background-color: rgba(226, 221, 221, 0.979);
+}
+.index_report .box {
+  width: 75%;
+  height: 592px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.index_report .box .span_a {
+  float: left;
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+.index_report .box .span_b {
+  float: right;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.index_report .box .span_b a {
+  color: #fa5508;
+}
+.index_report .box #ul_a {
+  margin: 61px 0 47px 0;
+  overflow: hidden;
+}
+.index_report .box #ul_a li:nth-child(4) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_report .box #ul_a li:nth-child(8) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_report .box #ul_a li:nth-child(12) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_report .box #ul_a li:nth-child(16) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_report .box #ul_a li {
+  cursor: pointer;
+  float: left;
+  width: 230px;
+  height: 232px;
+  background-color: white;
+  margin: 10px 70px 19px 0;
+  border-radius: 8px;
+  position: relative;
+}
+.index_report .box #ul_a li img {
+  width: 100%;
+  height: 132px;
+  border-radius: 10px;
+}
+.index_report .box #ul_a li p {
+  display: inline-block;
+  margin-top: 5px;
+  color: #6b6a6a;
+  font-size: 14px;
+}
+.index_report .box #ul_a li span {
+  position: absolute;
+  top: 191px;
+  left: 15px;
+  color: #6b6a6a;
+}
+.index_report .box #ul_a li .dot_box {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  bottom: 20px;
+  color: #6b6a6a;
+}
+.index_report .box #ul_a li .dot_box img {
+  width: 15px;
+  height: 15px;
+}
+.index_shoop .box {
+  width: 75%;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.index_shoop .box .span_a {
+  float: left;
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+.index_shoop .box .span_b {
+  float: right;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.index_shoop .box .span_b a {
+  color: #fa5508;
+}
+.index_shoop .box #ul_b {
+  margin: 61px 0 47px 0;
+  overflow: hidden;
+}
+.index_shoop .box #ul_b li:nth-child(4) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_shoop .box #ul_b li:nth-child(8) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_shoop .box #ul_b li:nth-child(12) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_shoop .box #ul_b li:nth-child(16) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_shoop .box #ul_b li {
+  cursor: pointer;
+  float: left;
+  width: 230px;
+  height: 232px;
+  background-color: white;
+  margin: 10px 70px 19px 0;
+  border-radius: 8px;
+  position: relative;
+}
+.index_shoop .box #ul_b li img {
+  width: 100%;
+  height: 132px;
+  border-radius: 10px;
+}
+.index_shoop .box #ul_b li p {
+  display: inline-block;
+  margin-top: 5px;
+  color: #6b6a6a;
+  font-size: 14px;
+}
+.index_shoop .box #ul_b li span {
+  position: absolute;
+  top: 191px;
+  left: 15px;
+  color: #6b6a6a;
+}
+.index_shoop .box #ul_b li .dot_box {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  bottom: 20px;
+  color: #6b6a6a;
+}
+.index_shoop .box #ul_b li .dot_box img {
+  width: 15px;
+  height: 15px;
+}
+.index_find {
+  background-color: rgba(226, 221, 221, 0.979);
+  position: relative;
+}
+.index_find .box {
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.index_find .box .span_a {
+  float: left;
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+.index_find .box .span_b {
+  float: right;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.index_find .box .span_b a {
+  color: #fa5508;
+}
+.index_find .box .box_a {
+  width: 100px;
+  height: 18px;
+  position: absolute;
+  background-color: white;
+  top: 25px;
+  left: 0;
+}
+.index_find .box #ul_c {
+  margin: 61px 0 47px 0;
+  overflow: hidden;
+}
+.index_find .box #ul_c li:nth-child(4) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_find .box #ul_c li:nth-child(8) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_find .box #ul_c li:nth-child(12) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_find .box #ul_c li:nth-child(16) {
+  float: right;
+  margin-right: 0 ;
+}
+.index_find .box #ul_c li {
+  cursor: pointer;
+  float: left;
+  width: 230px;
+  height: 232px;
+  background-color: white;
+  margin: 10px 70px 19px 0;
+  border-radius: 8px;
+  position: relative;
+}
+.index_find .box #ul_c li img {
+  width: 100%;
+  height: 132px;
+  border-radius: 10px;
+}
+.index_find .box #ul_c li p {
+  display: inline-block;
+  margin-top: 5px;
+  color: #6b6a6a;
+  font-size: 14px;
+}
+.index_find .box #ul_c li span {
+  position: absolute;
+  top: 191px;
+  left: 15px;
+  color: #6b6a6a;
+}
+.index_find .box #ul_c li .dot_box {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  bottom: 20px;
+  color: #6b6a6a;
+}
+.index_find .box #ul_c li .dot_box img {
+  width: 15px;
+  height: 15px;
+}

@@ -1,0 +1,495 @@
+.p {
+  text-align: center;
+  margin: 49px 0 47px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+.ul_a {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 0px solid red;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.ul_a li {
+  width: 165px;
+  float: left;
+}
+.ul_a li a {
+  color: silver;
+}
+.ul_a .li_a {
+  color: #fa5508;
+  border-bottom: #fa5508 solid 4px;
+}
+.cate {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(245, 240, 240, 0.979);
+  margin-top: 30px;
+}
+.cate .cate_live {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_live .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_live span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_live .live_ul {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.cate .cate_live .live_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_live .live_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_live .live_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_live .live_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_live .live_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_live .live_ul li:nth-child(7) {
+  margin-top: 10px;
+}
+.cate .cate_live .live_ul li:nth-child(8) {
+  margin-top: 10px;
+}
+.cate .cate_wring {
+  margin: 0 auto;
+  width: 81%;
+  height: 120px;
+  overflow: hidden;
+  background-color: white;
+}
+.cate .cate_wring .wring_a {
+  float: left;
+  margin: 0px 10px 40px 40px;
+  color: darkgrey;
+}
+.cate .cate_wring .wring_a li {
+  margin-top: 10px;
+}
+.cate .cate_wring .wring_a li:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_nurse {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_nurse .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_nurse span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_nurse .nurse_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_nurse .nurse_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_nurse .nurse_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_nurse .nurse_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_nurse .nurse_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .wring {
+  margin: 0 auto;
+  width: 81%;
+  background-color: white;
+}
+.cate .wring .wring_b {
+  overflow: hidden;
+  color: darkgrey;
+}
+.cate .wring .wring_b li {
+  float: left;
+  margin: 10px 30px 40px 40px;
+}
+.cate .wring .wring_b li:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_hearth {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_hearth .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_hearth span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_hearth .hearth_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_hearth .hearth_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_hearth .hearth_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_hearth .hearth_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_hearth .hearth_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_smart {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_smart .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_smart span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_smart .smart_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_smart .smart_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_smart .smart_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_smart .smart_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_smart .smart_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_trip {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_trip .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_trip span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_trip .trip_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_trip .trip_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_trip .trip_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_trip .trip_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_trip .trip_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_exercise {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_exercise .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_exercise span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_exercise .exercise_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_exercise .exercise_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_exercise .exercise_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_exercise .exercise_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_exercise .exercise_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_photography {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_photography .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_photography span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_photography .photography_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_photography .photography_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_photography .photography_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_photography .photography_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_photography .photography_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
+.cate .cate_phone {
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px  darkgrey dashed;
+  overflow: hidden;
+}
+.cate .cate_phone .cate_div {
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.cate .cate_phone span {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.cate .cate_phone .phone_ul li {
+  float: left;
+  margin: 75px 20px 20px 20px;
+  cursor: pointer;
+}
+.cate .cate_phone .phone_ul li p {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: darkgrey;
+}
+.cate .cate_phone .phone_ul li:hover {
+  transform: scale(0.8, 0.8);
+  transform: translateY(10px);
+}
+.cate .cate_phone .phone_ul li > img:hover {
+  opacity: 0.8;
+  animation: zhuan 1s linear infinite;
+}
+@-webkit-keyframes zhuan {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cate .cate_phone .phone_ul p:hover {
+  color: #fff350;
+  cursor: pointer;
+}
