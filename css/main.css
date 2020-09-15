@@ -7,9 +7,6 @@ ul > div > li {
   background: url('../images/img1/original.jpg') -273px;
   position: relative;
 }
-.header-nav > .header-one > a {
-  color: #fe5341;
-}
 .banner-text {
   width: 305px;
   height: 10px;
@@ -366,4 +363,19 @@ ul > div > li {
   text-align: center;
   margin-top: 8px;
   cursor: pointer;
+}
+.fix {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fix > img {
+  margin: 0 auto;
+  margin-left: 8px;
 }

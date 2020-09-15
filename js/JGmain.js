@@ -62,3 +62,15 @@ $('.slideshow-left').on('click',function(){
 $('.slideshow-right').on('click',function(){
     
 })
+
+//点击返回顶部
+$(window).scroll(function(){
+    if($(window).scrollTop()>=100){
+        $('.fix').fadeIn(300);
+    }else{
+        $('.fix').fadeOut(300);
+    }
+})
+$('.fix').bind('click',function(){
+    $('html').animate({scrollTop:0},300);
+})

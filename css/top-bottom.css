@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+.header-nav > .header-two > a {
+  color: #fe5341;
+}
 a {
   text-decoration: none;
 }
@@ -12,6 +15,8 @@ header {
   width: 100%;
   height: 104px;
   position: relative;
+  border-bottom: 1px solid #a3a3a3;
+  box-sizing: border-box;
 }
 .header-main {
   width: 75%;
@@ -21,10 +26,12 @@ header {
   transform: translateX(-50%);
 }
 .header-logo {
-  width: 266px;
-  height: 104px;
+  width: 200px;
+  height: 80px;
   float: left;
   background: url('../images/img2/logonew.png') no-repeat;
+  background-size: 100%;
+  margin-top: 10px;
 }
 .header-nav > li {
   width: 85px;
@@ -39,7 +46,7 @@ header {
   color: black;
 }
 .header-nav > li > a:hover {
-  color: orange;
+  color: #fe5341;
 }
 .header-image {
   width: 24px;
@@ -54,28 +61,28 @@ header {
   width: 45px;
   height: 30px;
   line-height: 30px;
-  border: 2px solid orange;
+  border: 2px solid #fe5341;
   border-radius: 5px;
   position: absolute;
   top: 45px;
   right: 55px;
   font-size: 14px;
   text-align: center;
-  color: orange;
+  color: #fe5341;
   cursor: pointer;
 }
 .header-login {
   width: 45px;
   height: 30px;
   line-height: 30px;
-  border: 2px solid orange;
+  border: 2px solid #fe5341;
   border-radius: 5px;
   position: absolute;
   top: 45px;
   right: 55px;
   font-size: 14px;
   text-align: center;
-  color: orange;
+  color: #fe5341;
   cursor: pointer;
   right: 125px;
 }
@@ -84,6 +91,7 @@ header {
   height: 350px;
   background-color: #505050;
   position: relative;
+  bottom: 0px;
   padding-top: 50px;
 }
 .erweima {
