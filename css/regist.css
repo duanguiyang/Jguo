@@ -1,0 +1,217 @@
+.middle {
+  width: 75%;
+  height: 650px;
+  background-color: #e9e8e8;
+  margin: 0 auto;
+  border-top: 1px solid #a3a3a3;
+}
+.middle .middle_box {
+  height: 600px;
+  width: 70%;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.middle .middle_box .box {
+  width: 6px;
+  height: 27px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.middle .middle_box .box_p {
+  position: absolute;
+  top: 23px;
+  left: 26px;
+}
+.middle .middle_box .middle_border {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+.middle .middle_box .middle_border input {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 6px;
+  background-color: darkgrey;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+}
+.middle .middle_box .middle_border input:nth-child(2) {
+  width: 60%;
+}
+.middle .middle_box .middle_border img {
+  position: absolute;
+  top: 84px;
+  left: 221px;
+}
+.middle .middle_box .middle_border input:nth-child(4) {
+  width: 60%;
+}
+.middle .middle_box .middle_border .auth {
+  width: 32%;
+  height: 40px;
+  position: absolute;
+  top: 139px;
+  left: 215px;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+  cursor: pointer;
+}
+.middle .middle_box .middle_border .auth span {
+  line-height: 40px;
+  margin-left: 10px;
+  color: darkgrey;
+}
+.middle .middle_box .middle_border .but {
+  width: 100%;
+  height: 40px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.middle .middle_box .middle_border .div_a {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 40px;
+  right: -209px;
+  color: red;
+  top: 20px;
+}
+.middle .middle_box .middle_border .div_b {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 40px;
+  right: -209px;
+  color: red;
+  top: 200px;
+}
+.middle .middle_box .middle_border .div_c {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 40px;
+  right: -209px;
+  color: red;
+  top: 260px;
+}
+.middle .middle_box .middle_border .div_d {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 40px;
+  right: -209px;
+  color: red;
+  top: 320px;
+}
+.middle .middle_box .img_a {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 204px;
+  top: 129px;
+}
+.middle .middle_box .img_b {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 204px;
+  top: 129px;
+  top: 312px;
+}
+.middle .middle_box .img_c {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 204px;
+  top: 129px;
+  top: 371px;
+}
+.middle .middle_box .img_d {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 204px;
+  top: 129px;
+  top: 430px;
+}
+.registered {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 7px;
+  position: absolute;
+  top: 160px;
+  left: 513px;
+  background-color: cornflowerblue;
+}
+.registered span {
+  display: inline-block;
+  font-size: 60px;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+.registered .go_login {
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 45px;
+  right: 55px;
+  font-size: 14px;
+  text-align: center;
+  color: orange;
+  cursor: pointer;
+}
+.registered .go_login a {
+  color: orange;
+}
+.registered .go_log {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 45px;
+  left: 50px;
+  font-size: 14px;
+  text-align: center;
+  color: orange;
+  cursor: pointer;
+}
+.registered .go_log a {
+  color: orange;
+}
+.registered .cross {
+  color: red;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}

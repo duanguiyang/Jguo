@@ -71,6 +71,9 @@ header {
   color: #fe5341;
   cursor: pointer;
 }
+.header-reg a {
+  color: orange;
+}
 .header-login {
   width: 45px;
   height: 30px;
