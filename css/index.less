@@ -1,0 +1,152 @@
+    .border(){//上部份样式
+        .span_a{
+            float: left;
+            font-size: 18px;
+            font-weight: 550;
+            margin-top: 20px; 
+        }
+        .span_b{
+            float: right;
+            font-size: 15px;
+            margin-top: 20px; 
+            a{
+                color: rgb(250, 85, 8);
+            }
+        } 
+    }
+    .lis(){//li
+        li{
+            cursor: pointer;
+            float: left;
+            width: 230px;
+            height: 232px;
+            background-color: white;
+            margin:10px 70px 19px 0;
+            border-radius: 8px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 132px;
+                border-radius: 10px;
+            }
+           p{
+            display: inline-block;
+            margin-top: 5px;
+            color: rgb(107, 106, 106); 
+            font-size: 14px; 
+            }
+            span{
+                position: absolute;
+                top: 191px;
+                left: 15px;
+                color: rgb(107, 106, 106);
+            }
+            .dot_box{
+                width: 100px;
+                height: 20px;
+                position: absolute;
+                right: -30px;
+                bottom: 20px;
+                color: rgb(107, 106, 106);
+                img{
+                    width: 15px;
+                    height: 15px;
+                    
+                }
+            }
+            
+        }
+
+    }
+    .lis_chid(){
+        li:nth-child(4){
+            float: right;
+            margin-right:0 ;
+            }
+            li:nth-child(8){
+                float: right;
+                margin-right:0 ;
+                }
+                li:nth-child(12){
+                    float: right;
+                    margin-right:0 ;
+                }
+                li:nth-child(16){
+                    float: right;
+                    margin-right:0 ;
+                }
+
+
+    }
+
+.index_report{//报告精选开始
+    background-color: rgba(226, 221, 221, 0.979);
+    .box{
+        width: 75%;
+        height: 592px;
+        margin:  0 auto;
+        
+        overflow: hidden;
+        .border();
+        #ul_a{           
+            margin: 61px 0 47px 0;
+            overflow: hidden;  
+            .lis_chid();
+                .lis();
+                                    
+        }    
+    }  
+    // }
+}//报告精选结束
+
+
+//导购精选开始
+.index_shoop{
+    .box{
+        width: 75%;
+        height: 280px;
+        margin:  0 auto;
+        margin-bottom: 60px;
+        overflow: hidden;
+        
+        .border();
+        #ul_b{  
+                  
+            margin: 61px 0 47px 0;
+            overflow: hidden;  
+            .lis_chid();
+                .lis(); 
+        }
+        
+    }
+
+}//导购精选结束
+
+
+.index_find{//发现酷玩开始
+    background-color: rgba(226, 221, 221, 0.979);
+    position: relative;
+    .box{
+        width: 75%;
+        margin:  0 auto;   
+        overflow: hidden;
+        
+        .border();
+        .box_a{
+            width: 100px;
+            height: 18px;
+            position: absolute;
+            background-color: white;
+            top: 25px;
+            left: 0;
+        }
+        #ul_c{  
+                  
+            margin: 61px 0 47px 0;
+            overflow: hidden;  
+            .lis_chid(); 
+                .lis(); 
+        }   
+    }
+}//发现酷玩结束
+

@@ -1,0 +1,236 @@
+.p{//发现酷玩
+    text-align: center;
+    margin: 49px 0 47px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+.ul_a{//最新最热
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid red;
+    overflow: hidden;
+    margin-bottom: 4px;
+    li{
+       width: 165px;
+       float: left;
+       a{
+        color: silver;
+       }
+    }
+    .li_a{//最新-最热样式
+        color: rgb(250, 85, 8);
+        border-bottom: rgb(250, 85, 8) solid 4px;
+    }
+   
+}
+
+.cate_div(){//左边红色div方法
+    .cate_div{ 
+        width: 5px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+    }
+    span{
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
+   
+}//左边红色div方法结束
+
+.wring(){//虚线部分方法
+    margin: 0 auto;
+    width: 81%; 
+   background-color: white;
+   .wring_b{
+    overflow: hidden;
+    color: darkgrey;
+    li{
+        float: left;
+        margin: 10px 30px 40px 40px;     
+    }
+    li:hover{
+      color: rgb(255, 243, 80);
+      cursor:pointer;
+    }
+   }
+}//虚线部分结束
+
+.lis(){//图片li方法
+    li{
+        float: left;
+        margin: 75px 20px 20px 20px;
+        cursor:pointer;
+        
+        p{
+         margin-top: 10px;
+         margin-left: 3px;
+          color: darkgrey;  
+        }
+    }
+    li:hover{
+        transform: scale(0.8,0.8);
+        transform: translateY(10px);
+        
+    }
+    li>img:hover{
+         
+         opacity: 0.8;
+         animation: zhuan 1s linear infinite;
+        @-webkit-keyframes zhuan {
+            from{
+                transform: rotate(0);
+            }to{
+            transform: rotate(360deg);
+             }
+        }
+    }
+    p:hover{
+        color: rgb(255, 243, 80);
+        cursor:pointer;
+      }
+}//图片li方法结束
+
+.under(){//部分块宽高开始
+    width: 81%;
+    margin: 0 auto;
+    margin-top: 60px; 
+    position: relative;
+    background-color: white;
+    border-bottom: 1px  darkgrey dashed;
+    overflow: hidden;
+}//部分块宽高结束
+
+
+
+.cate{//品类部分开始
+    width: 75%;
+    margin: 0 auto;
+    background-color:  rgba(245, 240, 240, 0.979);
+    margin-top: 30px;
+    
+    .cate_live{//生活部分开始
+        .under();
+        .cate_div();
+        .live_ul{//图片内容开始    
+           width: 100%;
+            height: 400px;
+           margin-top: 10px;
+           overflow: hidden;
+           .lis();
+           li:nth-child(7){
+            margin-top: 10px;
+           } 
+           li:nth-child(8){
+            margin-top: 10px;
+           }
+
+        }//图片内容开始
+    
+}//生活部分结束
+    .cate_wring{
+        margin: 0 auto;
+        width: 81%;
+        height: 120px;
+       overflow: hidden;
+       background-color: white;
+       .wring_a{
+        float: left;
+        margin: 0px 10px 40px 40px;
+        color: darkgrey;
+        li{
+            margin-top: 10px;
+        }
+        li:hover{
+            color: rgb(255, 243, 80);
+            cursor:pointer;
+          }
+       }
+    }
+
+    .cate_nurse{//个人护理部分开始
+        .under();
+        .cate_div();
+        .nurse_ul{
+            .lis();
+        }
+    }//个人护理部分结束
+    .wring{//虚线后
+        .wring();
+    }
+
+    .cate_hearth{//健康部分开始
+        .under();
+        .cate_div();
+        .hearth_ul{
+            .lis();
+        }
+    }//健康部分结束
+
+    .cate_smart{//智能穿戴部分开始
+        .under();
+        .cate_div();
+        .smart_ul{
+            .lis();
+        }
+    }//智能穿戴部分结束
+
+    .cate_trip{//出行部分开始
+        .under();
+        .cate_div();
+        .trip_ul{
+            .lis();
+        }
+    }//出行部分结束
+   
+    .cate_exercise{//运动户外部分开始
+        .under();
+        .cate_div();
+        .exercise_ul{
+            .lis();
+        }
+    }//运动户外部分结束
+
+    .cate_photography{//摄影部分开始
+        .under();
+        .cate_div();
+        .photography_ul{
+            .lis();
+        }
+    }//摄影部分结束
+
+    .cate_phone{//手机部分开始
+        .under();
+        .cate_div();
+        .phone_ul{       
+            .lis();
+            // li>img:hover{
+            // animation: tiao 5s linear infinite;
+           
+            //     @-webkit-keyframes tiao {
+            //         0%{top: 0;left: 0;}
+            //         15%{top: 40px;left: 50px;}
+            //         30%{top: 60px;left: 80px;}
+            //         55%{top: 50px;left: 600px;}
+            //         75%{top: 50px;left: 800px;}
+            //         85%{top: 65px;left: 900px;}
+            //         100%{top: 0px;left: 1280px;}
+            //         // from{
+            //         //     transform: translateX(0);
+            //         // }to{
+            //         // transform: translateX(1000px);
+            //         //  }
+
+            //     }
+
+            // }
+        }
+    }//手机部分结束
+
+
+}//品类部分结束
+
