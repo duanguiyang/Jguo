@@ -28,6 +28,7 @@
   margin: 0 auto;
   background-color: rgba(245, 240, 240, 0.979);
   margin-top: 30px;
+  border-top: 4px solid darkgray;
 }
 .cate .cate_live {
   width: 81%;

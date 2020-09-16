@@ -129,7 +129,10 @@
                 <div class=dot_box>
                     <img src="../images/img1/xin.png">5
                     <img src="../images/img1/reply.png">2
-                </div>  
+                </div> 
+                <div class=dot_a>
+                    首发
+                </div> 
 
             </li>
         {{~}}
@@ -160,7 +163,7 @@
             success:function(data){
                 console.log(data);          
                 var inter=doT.template($("#show").text());
-                $("#Foundplay_ul").html(inter(data[0]));
+                $("#Foundplay_ul").html(inter(data[3]));
                 $("#Foundplay_ul1").html(inter(data[1]));
                 $("#Foundplay_ul2").html(inter(data[2]));
                 $("#Foundplay_ul3").html(inter(data[3]));

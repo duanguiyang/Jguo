@@ -75,6 +75,17 @@
   width: 15px;
   height: 15px;
 }
+.Foundplay .Foundplay_div #Foundplay_ul li .dot_a {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 0 5px;
+}
 .Foundplay .Foundplay_div #Foundplay_ul li:nth-child(4) {
   float: right;
   margin-right: 0 ;
@@ -133,6 +144,17 @@
 .Foundplay .Foundplay_div #Foundplay_ul1 li .dot_box img {
   width: 15px;
   height: 15px;
+}
+.Foundplay .Foundplay_div #Foundplay_ul1 li .dot_a {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 0 5px;
 }
 .Foundplay .Foundplay_div #Foundplay_ul1 li:nth-child(4) {
   float: right;
@@ -193,6 +215,17 @@
   width: 15px;
   height: 15px;
 }
+.Foundplay .Foundplay_div #Foundplay_ul2 li .dot_a {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 0 5px;
+}
 .Foundplay .Foundplay_div #Foundplay_ul2 li:nth-child(4) {
   float: right;
   margin-right: 0 ;
@@ -251,6 +284,17 @@
 .Foundplay .Foundplay_div #Foundplay_ul3 li .dot_box img {
   width: 15px;
   height: 15px;
+}
+.Foundplay .Foundplay_div #Foundplay_ul3 li .dot_a {
+  width: 40px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 0 5px;
 }
 .Foundplay .Foundplay_div #Foundplay_ul3 li:nth-child(4) {
   float: right;

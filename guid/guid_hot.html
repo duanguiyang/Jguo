@@ -125,6 +125,21 @@
                     <img src="../images/img1/xin.png">7
                     <img src="../images/img1/reply.png">5
                 </div> 
+                <div class=dot_a>
+                    首发
+                </div>
+                <div class=dot_b>
+                    体验师专项
+                </div>
+                <div class=dot_c>
+                    <span class="dot_las">倒计时3天</span>
+                    <span class="dot_lass">有52人在抢...</span>
+                </div>
+                <div class=dot_c1>
+                    <span class="dot_la">倒计时1天</span>
+                    <span class="dot_la1">有96人在抢...</span>
+                </div>
+
 
             </li>
         {{~}}
@@ -140,6 +155,9 @@
                 <img src="../images/img1/xin.png">10
                 <img src="../images/img1/reply.png">13
             </div>  
+            <div class=dot_a>
+                首发
+            </div> 
 
         </li>
     {{~}}
@@ -147,16 +165,16 @@
 
     <script>                  
             $.ajax({//导购清单--最新
-            url:"http://192.168.1.47:3000/guid/hot",
+            url:"http://192.168.1.47:3000/play/new",
             type:"get",
             dataType:"json",
             success:function(data){
                 console.log(data);          
                 var inter=doT.template($("#show").text());
-                $("#Foundplay_ul").html(inter(data));
-                $("#Foundplay_ul1").html(inter(data));
-                $("#Foundplay_ul2").html(inter(data));
-                $("#Foundplay_ul3").html(inter(data));
+                $("#Foundplay_ul").html(inter(data[0]));
+                $("#Foundplay_ul1").html(inter(data[1]));
+                $("#Foundplay_ul2").html(inter(data[2]));
+                $("#Foundplay_ul3").html(inter(data[3]));
 
             }
         })

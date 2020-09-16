@@ -34,7 +34,7 @@ var name_verify=/^\S+$/;
 if(a){
     username.focus(function(){//用户名获取焦点
         if(name_verify.test(username.val())==false){
-            $(".div_b").html("*请输入正确的用户名");
+            $(".div_b").html("*请输入你的用户名");
             $(".img_b").hide();          
         }else{
             $(".div_b").html("");
@@ -121,7 +121,7 @@ pass.blur(function(){
 
 //获取验证码计时器
 var timer=null;
-var index=6;
+var index=60;
 var ing=true;
 if(true){
     $(".auth_text").on("click",function(){
@@ -137,7 +137,7 @@ function set(){
         $(".auth_text").html("重发"+index);
         if(index<=0){
             clearInterval(timer); 
-            index=6;
+            index=60;
             ing=true;
             $(".auth_text").html("重新获取");
              
