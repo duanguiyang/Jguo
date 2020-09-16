@@ -20,15 +20,15 @@
         <div class="header-main">
             <a href="main.html" class="header-logo"></a>
             <ul class="header-nav">
-                <li class="header-one"><a href="main.html">首页</a></li>
+                <li class="header-one"><a href="index.html">首页</a></li>
                 <li><a href="./play/play.html">酷玩</a></li>
                 <li><a href="guid/guid_new.html">导购</a></li>
                 <li><a href="help.html">试用</a></li>
-                <li><a href="">报告</a></li>
+                <li><a href="report.html">报告</a></li>
             </ul>
             <div class="header-image"></div>
             <div class="header-login">登录</div>
-            <div class="header-reg">注册</div>
+            <div class="header-reg"> <a href="regist.html">注册</a> </div>
         </div>
     </header>
 
@@ -262,7 +262,7 @@
         <div class="bott_ bott_two">
             <ul>
                 <h5 class="bott_h5">免费试用</h5>
-                <li>试用流程</li>
+                <li><a href="tryout.html">试用流程</a> </li>
                 <li>如何提高成功率</li>
             </ul>
         </div>
@@ -301,7 +301,7 @@
                 <h5 class="bott_h5">厂商合作</h5>
                 <li><a href="#">关于极果</a></li>
                 <li><a href="#">联系我们</a></li>
-                <li><a href="#">商务合作：BD@jiguo.com</a></li>
+                <li><a href="./help-business.html">商务合作：BD@jiguo.com</a></li>
                 <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
             </ul>
         </div>
@@ -317,7 +317,7 @@
             <li>
                 <img src="{{=value.img}}">
                 <p>{{=value.text}}</p>
-                <span>{{=value.uName}}</span>
+                <span>{{=value.price}}</span>
                 <div class=dot_box>
                     <img src="./images/img1/zan.png">3
                     <img src="./images/img1/reply.png">3
@@ -376,12 +376,12 @@
 
     <script> //数据源
         $.ajax({//报告精选
-            url: "./json/master.json",
+            url: "http://192.168.1.47:3000/play/new",
             type: "get",
             success: function (data) {
                 console.log(data);
                 var inter = doT.template($("#show").text());
-                $("#ul_a").html(inter(data))
+                $("#ul_a").html(inter(data[1]))
 
             }
         })
