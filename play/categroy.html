@@ -4,27 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>发现酷玩</title>
     <link href="../css/category.css" rel="stylesheet">
     <link href="../css/defoult.css" rel="stylesheet">
     <link href="../css/top-bottom.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css">s
 </head>
 
 <body>
     <script src="../js/jquery-3.5.1.js"></script>
+    <!-- 登录 -->
+    <div class="backg-gray" hidden>
+        <div class="register">
+            <div class="cha"></div>
+            <div class="register-left">
+                <p>极果账号登录</p>
+                <div class="reg-inpt">
+                    <div class="reg-phimg"></div><input type="text" placeholder="请输入手机号" class="reg-phone"/><br>
+                    <div class="reg-pimg"></div><input type="password" placeholder="请输入密码" class="reg-pass"/><br>
+                </div>
+                <div class="reg-re">
+                    <input type="checkbox" class="reg-check"><span class="reg-remove">下次自动登录</span>
+                    <button class="regin" >登录</button>
+                </div>
+                <div class="reg-user">
+                    <a href="regist.html" class="rega1">注册新账号</a>
+                    <a href="#" class="rega2">忘记密码？</a>
+                </div>
+            </div>
 
+            <div class="register-right">
+                <p>社交网络账号登录</p>
+                <div class="reg-erweima">
+                    <img src="./images/img1/weixin-login-center-icon.png" alt="" class="reg-wx">
+                </div>
+                <ul class="reg-qqwb">
+                    <li class="reg-wb"><span>微博</span></li>
+                    <li class="reg-qq"><span>QQ</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header-main">
             <a href="main.html" class="header-logo"></a>
             <ul class="header-nav">
                 <li class="header-one"><a href="../index.html">首页</a></li>
-                <li><a href="play.html">酷玩</a></li>
+                <li class=" header-two"><a href="play.html">酷玩</a></li>
                 <li><a href="../guid/guid_new.html">导购</a></li>
                 <li><a href="../help.html">试用</a></li>
                 <li><a href="../report.html">报告</a></li>
             </ul>
             <div class="header-image"></div>
+<<<<<<< HEAD
             <div class="header-reg"><a href="../regist.html">报告</a></div>
+=======
+            <div class="header-login">登录</div>
+            <a class="header-reg" href="../regist.html">注册</a>
+>>>>>>> 1d0c50a... 3.0
         </div>
     </header>
     <p class="p">发现酷玩</p>
@@ -344,8 +381,13 @@
         </div>
         <div class="bott_ bott_two">
             <ul>
+<<<<<<< HEAD
                 <h5 class="bott_h5">免费试用</h5>
                 <li><a href="../tryout.html">试用流程</a></li>
+=======
+                <h5 class="bott_h5 bott-h"><a href="../free_charge.html">免费试用</a></h5>
+                <li>试用流程</li>
+>>>>>>> 1d0c50a... 3.0
                 <li>如何提高成功率</li>
             </ul>
         </div>
@@ -382,7 +424,7 @@
         <div class="bott_ bott_five">
             <ul>
                 <h5 class="bott_h5">厂商合作</h5>
-                <li><a href="#">关于极果</a></li>
+                <li><a href="../help-business.html">关于极果</a></li>
                 <li><a href="#">联系我们</a></li>
                 <li><a href="../help-business.html">商务合作：BD@jiguo.com</a></li>
                 <li><a href="#">CEO邮箱：CEO@jiguo.com</a></li>
@@ -394,5 +436,18 @@
 
 
 </body>
-
+<div class="fix"><img src="./images/img1/back.png" alt=""></div>
 </html>
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()>=100){
+            $('.fix').fadeIn(300);
+        }else{
+            $('.fix').fadeOut(300);
+        }
+    })
+    $('.fix').bind('click',function(){
+        $('html').animate({scrollTop:0},300);
+    })
+</script>
+<script src="../js/JGmain.js"></script>

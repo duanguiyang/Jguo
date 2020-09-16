@@ -74,3 +74,68 @@ $(window).scroll(function(){
 $('.fix').bind('click',function(){
     $('html').animate({scrollTop:0},300);
 })
+
+
+$('.header-login').on('click',function(){
+    $('.backg-gray').show();
+})
+$('.cha').on('click',function(){
+    $('.backg-gray').hide();
+})
+
+    
+if(localStorage.getItem('tick')){
+    $('.reg-phone').val(localStorage.getItem('phone'));
+    $('.reg-pass').val(localStorage.getItem('psd'));
+    $('.reg-check').attr('checked',localStorage.getItem('tick'));
+}
+
+//鼠标焦点
+$('.reg-phone').on('focus',function(){
+    $('.reg-phone').attr('placeholder','');
+})
+$('.reg-phone').on('blur',function(){
+    $('.reg-phone').attr('placeholder','请输入手机号');
+})
+
+$('.reg-pass').on('focus',function(){
+    $('.reg-pass').attr('placeholder','');
+})
+$('.reg-pass').on('blur',function(){
+    $('.reg-pass').attr('placeholder','请输入密码');
+})
+
+
+$('.regin').on('click',function(){
+    var phone = /^1[3-9]{1}[0-9]{9}$/;
+    var pass = /^\w{6,}$/;
+
+    if(phone.test($('.reg-phone').val())==false){
+        alert('请输入正确的手机号！');
+    }else if(pass.test($('.reg-pass').val())==false){
+        alert('请输入正确的密码！');
+    }
+    else{
+        $.ajax({
+            url:'http://192.168.1.47:3000/users',
+            type:'post',
+            data:{
+                type:"login",
+                phone:$('.reg-phone').val(),
+                pass:$('.reg-pass').val()
+            },
+            success:function(json){
+                if($('.reg-check').is(':checked')){
+                    localStorage.setItem('phone',$('.reg-phone').val());
+                    localStorage.setItem('psd',$('.reg-pass').val());
+                    localStorage.setItem('tick',$('.reg-check').is(':checked'));
+                }
+                else{
+                    localStorage.clear();
+                }
+                alert('登录成功！');
+                $('.backg-gray').hide();
+            }
+        })
+    } 
+})

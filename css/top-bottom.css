@@ -141,6 +141,12 @@ header {
   font-weight: bold;
   margin-bottom: 25px;
 }
+.bott-h > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
 .bott_ > ul > li {
   font-size: 14px;
   color: #a3a3a3;

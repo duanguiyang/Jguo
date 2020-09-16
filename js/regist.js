@@ -134,12 +134,12 @@ function set(){
        ing=false;
         index--;
         $(".auth_text").css("color","black");
-        $(".auth_text").html("重发"+index);
+        $(".auth_text").text("还需"+index+'秒获取');
         if(index<=0){
             clearInterval(timer); 
             index=60;
             ing=true;
-            $(".auth_text").html("重新获取");
+            $(".auth_text").text("重新获取");
              
         }
         
